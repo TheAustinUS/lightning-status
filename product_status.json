@@ -1,0 +1,68 @@
+{
+  "COD: Black Ops 6": {
+    "status": "Currently Unavailable",
+    "by": "Austin",
+    "time": "2025-06-01 10:24 UTC",
+    "group": "DMA Software"
+  },
+  "COD AFK TOOL": {
+    "status": "Undetected",
+    "by": "Austin",
+    "time": "2025-05-27 07:46 UTC",
+    "group": "Software Tools"
+  },
+  "COD BOT LOBBIES": {
+    "status": "Currently Unavailable",
+    "by": "Austin",
+    "time": "2025-05-27 05:06 UTC",
+    "group": "Other Services"
+  },
+  "Battlefield 2042": {
+    "status": "Under Development",
+    "by": "Austin",
+    "time": "2025-05-27 05:25 UTC",
+    "group": "DMA Software"
+  },
+  "Rainbow Six Siege": {
+    "status": "Under Development",
+    "by": "Austin",
+    "time": "2025-05-27 05:26 UTC",
+    "group": "DMA Software"
+  },
+  "The Finals": {
+    "status": "Under Development",
+    "by": "Austin",
+    "time": "2025-05-27 05:26 UTC",
+    "group": "DMA Software"
+  },
+  "Permanent Spoof": {
+    "status": "Under Development",
+    "by": "Lightning Services",
+    "time": "2025-05-27 12:37 UTC",
+    "group": "Software Tools"
+  },
+  "PUBG": {
+    "status": "Under Development",
+    "by": "Austin",
+    "time": "2025-05-27 05:28 UTC",
+    "group": "DMA Software"
+  },
+  "MP RANKED LOBBIES": {
+    "status": "Currently Unavailable",
+    "by": "Austin",
+    "time": "2025-05-27 09:13 UTC",
+    "group": "Other Services"
+  },
+  "DullWave COD": {
+    "status": "Currently Unavailable",
+    "by": "Austin",
+    "time": "2025-05-31 09:09 UTC",
+    "group": "NON-DMA Software"
+  },
+  "DullWave FragPunk": {
+    "status": "Currently Unavailable",
+    "by": "Lightning Services",
+    "time": "2025-05-30 09:54 UTC",
+    "group": "NON-DMA Software"
+  }
+}
