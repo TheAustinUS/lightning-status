@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lightning Services – Product Status</title>
+  <style>
+    body { font-family: sans-serif; background: #0d0d0d; color: white; margin: 0; padding: 2rem; }
+    h1 { text-align: center; color: #fed422; }
+    .status-container { max-width: 600px; margin: auto; }
+    .product { background: #1a1a1a; border-radius: 10px; padding: 1rem; margin: 1rem 0; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+    .product-name { font-size: 1.2rem; font-weight: bold; }
+    .status { margin-top: 0.5rem; font-weight: bold; }
+    .green { color: #4caf50; }
+    .yellow { color: #ffc107; }
+    .blue { color: #2196f3; }
+    .orange { color: #ff9800; }
+    .red { color: #f44336; }
+  </style>
+</head>
+<body>
+  <h1>🛠 Product Status</h1>
+  <div class="status-container" id="statusContainer">Loading...</div>
+
+  <script>
+    async function fetchStatus() {
+      try {
+        const response = await fetch('https://theaustinus.github.io/lightning-status/product_status.json');
+        const data = await response.json();
+        const container = document.getElementById('statusContainer');
+        container.innerHTML = '';
+        data.products.forEach(product => {
+          const div = document.createElement('div');
+          div.className = 'product';
+          div.innerHTML = `
+            <div class="product-name">${product.name}</div>
+            <div class="status ${product.color.toLowerCase()}">${product.status}</div>
+          `;
+          container.appendChild(div);
+        });
+      } catch (err) {
+        document.getElementById('statusContainer').innerHTML = '⚠️ Failed to load status data.';
+      }
+    }
+
+    fetchStatus();
+    setInterval(fetchStatus, 30000); // Refresh every 30 seconds
+  </script>
+</body>
+</html>
